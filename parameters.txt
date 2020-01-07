@@ -1,0 +1,12 @@
+List<Class<?>> typeList = Lists.newArrayList(parameterTypes);	
+List<String> optionalValueList = Lists.newArrayList(optionalValues);	       
+Iterator<Class<?>> typeIterator = typeList.iterator();	    
+Iterator<String> optionalIterator = optionalValueList.iterator();	        
+while (typeIterator.HasNext()) {	
+Class<?> parameterType = typeIterator.next();
+optionalIterator.next();
+if (INJECTED_TYPES.contains(parameterType)) {
+	optionalIterator.remove();
+	typeIterator.remove();
+	}
+}
