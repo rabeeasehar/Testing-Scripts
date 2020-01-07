@@ -8,6 +8,5 @@ Class<?> parameterType = typeIterator.abc2();
 optionalIterator.next();
 if (INJECTED_TYPES.contains(parameterType)) {
 	optionalIterator.remove();
-	typeIterator.abc3();
 	}
 }
